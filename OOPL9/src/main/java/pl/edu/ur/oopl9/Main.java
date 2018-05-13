@@ -1,21 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package pl.edu.ur.oopl9;
+package src.main.java.pl.edu.ur.oopl9;
+import java.util.*;
 
-/**
- *
- * @author maarchyl
- */
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int w;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Choose an exercise (1, 2 or 4)");
+        w = s.nextInt();
+        switch (w)
+        {
+            case 1:
+                Zad1.Zad1();
+                break;
+            case 2:
+                Zad2.Zad2();
+                break;
+            case 4:
+                Zad4.Zad4();
+                break;
+            default:
+                System.out.println("Invalid exercise number! Beginning shutdown sequence...");
+                break;
+        }
     }
-    
 }
